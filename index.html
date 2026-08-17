@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="GZS7tdlfOuWfZyZ7GMYhTBeB7Zv4hRw2agej38on3bk" />
+<meta name="msvalidate.01" content="11FACE0DA242146A655A5EF4688B4A5F" />
+<title>Bangladesh — la terra scritta dai fiumi | Storia, geografia e cultura</title>
+<meta name="description" content="Un viaggio nel Bangladesh: il più grande delta fluviale del pianeta, la storia dell'indipendenza del 1971, le Sundarbans e la tigre del Bengala, riso, juta e la lingua bengalese.">
+<link rel="canonical" href="https://bangladesh23456.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bangladesh — la terra scritta dai fiumi">
+<meta property="og:description" content="Un viaggio nel Bangladesh: il delta di Gange, Brahmaputra e Meghna, la storia dell'indipendenza, le Sundarbans e la cultura bengalese.">
+<meta property="og:url" content="https://bangladesh23456.netlify.app/">
+<meta property="og:locale" content="it_IT">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bangladesh — la terra scritta dai fiumi">
+<meta name="twitter:description" content="Il delta più grande del pianeta: geografia, storia, natura e cultura del Bangladesh.">
+
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0F1912;
+    --bg-deep: #0A120C;
+    --surface: #17241C;
+    --surface-2: #1E2E24;
+    --ink: #F1ECDD;
+    --ink-dim: #B9C2B4;
+    --gold: #C9A44C;
+    --gold-soft: #8A7133;
+    --paddy: #5C8768;
+    --silt-red: #B24A3A;
+    --line: rgba(241,236,221,0.12);
+    --serif: 'Fraunces', serif;
+    --sans: 'Work Sans', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  a{ color: inherit; }
+
+  ::selection{ background: var(--gold-soft); color: var(--ink); }
+
+  .wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Delta motif (signature element) ---------- */
+  .delta-svg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.55;
+  }
+  .delta-svg path{
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.1;
+    stroke-linecap: round;
+    opacity: 0.55;
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: draw 3.2s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .delta-svg path.thin{ stroke-width: 0.6; opacity: 0.35; }
+  .delta-svg path:nth-child(1){ animation-delay: 0.1s; }
+  .delta-svg path:nth-child(2){ animation-delay: 0.35s; }
+  .delta-svg path:nth-child(3){ animation-delay: 0.5s; }
+  .delta-svg path:nth-child(4){ animation-delay: 0.7s; }
+  .delta-svg path:nth-child(5){ animation-delay: 0.9s; }
+  .delta-svg path:nth-child(6){ animation-delay: 1.05s; }
+  .delta-svg path:nth-child(7){ animation-delay: 1.2s; }
+  .delta-svg path:nth-child(8){ animation-delay: 1.4s; }
+  .delta-svg path:nth-child(9){ animation-delay: 1.55s; }
+  .delta-svg path:nth-child(10){ animation-delay: 1.7s; }
+
+  @keyframes draw{
+    to{ stroke-dashoffset: 0; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow{
+    position: relative;
+    z-index: 1;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 22px;
+  }
+
+  .hero h1{
+    position: relative;
+    z-index: 1;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(3.4rem, 9vw, 7.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .hero h1 em{
+    font-style: italic;
+    font-weight: 400;
+    color: var(--paddy);
+  }
+
+  .hero .bn{
+    position: relative;
+    z-index: 1;
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--ink-dim);
+    margin-top: 8px;
+  }
+
+  .hero p.lede{
+    position: relative;
+    z-index: 1;
+    max-width: 540px;
+    margin-top: 32px;
+    font-size: 1.15rem;
+    color: var(--ink-dim);
+    font-weight: 300;
+  }
+
+  .hero-meta{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 40px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+  }
+  .hero-meta div{ font-family: var(--mono); font-size: 12px; color: var(--ink-dim); }
+  .hero-meta strong{ display:block; font-family: var(--sans); font-size: 15px; color: var(--ink); font-weight: 500; margin-bottom: 4px; }
+
+  /* ---------- Section scaffolding ---------- */
+  section{
+    position: relative;
+    padding: 110px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+
+  .section-label{
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  h2{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.08;
+    max-width: 620px;
+  }
+
+  h2 em{ font-style: italic; color: var(--paddy); font-weight: 400; }
+
+  .lead-text{
+    max-width: 460px;
+    color: var(--ink-dim);
+    font-weight: 300;
+    font-size: 1.02rem;
+  }
+
+  /* ---------- Geography stats ---------- */
+  .stat-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .stat{
+    background: var(--bg);
+    padding: 34px 28px;
+  }
+  .stat .num{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 2.6rem;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .stat .num small{ font-family: var(--sans); font-style: normal; font-size: 1rem; color: var(--ink-dim); margin-left: 4px; }
+  .stat .label{
+    margin-top: 10px;
+    font-size: 0.92rem;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+
+  .rivers{
+    margin-top: 48px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .river-chip{
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-dim);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 999px;
+  }
+  .river-chip strong{ color: var(--gold); font-weight: 500; }
+
+  /* ---------- Timeline (real chronology, justifies numbering) ---------- */
+  .timeline{
+    display: flex;
+    flex-direction: column;
+  }
+  .tl-item{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+  }
+  .tl-item:last-child{ border-bottom: 1px solid var(--line); }
+  .tl-year{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--gold);
+  }
+  .tl-body h3{
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .tl-body p{
+    color: var(--ink-dim);
+    font-size: 0.95rem;
+    font-weight: 300;
+    max-width: 560px;
+  }
+
+  /* ---------- Nature ---------- */
+  .nature-grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .nature-card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 32px;
+  }
+  .nature-card h3{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+  .nature-card p{ color: var(--ink-dim); font-weight: 300; font-size: 0.98rem; }
+  .nature-card + .nature-card{ margin-top: 20px; }
+
+  /* ---------- Culture / economy ---------- */
+  .culture-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 60px;
+  }
+  .culture-item .tag{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--paddy);
+    margin-bottom: 10px;
+    display: block;
+  }
+  .culture-item h3{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .culture-item p{ color: var(--ink-dim); font-weight: 300; font-size: 0.96rem; }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding: 70px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .bn-mark{ font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--gold); }
+  footer .fine{ font-family: var(--mono); font-size: 11px; color: var(--ink-dim); }
+
+  @media (max-width: 760px){
+    .stat-grid{ grid-template-columns: 1fr; }
+    .nature-grid, .culture-grid{ grid-template-columns: 1fr; }
+    .tl-item{ grid-template-columns: 1fr; gap: 10px; }
+    section{ padding: 76px 0; }
+    .hero{ padding-top: 100px; }
+  }
+
+  :focus-visible{
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="delta-svg" viewBox="0 0 1080 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M 540 -20 C 520 120, 560 200, 500 300 C 460 370, 420 400, 380 480 C 350 540, 300 580, 240 620"/>
+    <path d="M 540 -20 C 560 130, 520 210, 570 300 C 610 370, 650 400, 690 480 C 720 540, 770 580, 830 620"/>
+    <path d="M 500 300 C 470 340, 430 350, 390 400 C 360 440, 340 470, 300 500" class="thin"/>
+    <path d="M 570 300 C 600 340, 640 350, 680 400 C 710 440, 730 470, 770 500" class="thin"/>
+    <path d="M 380 480 C 350 500, 320 500, 280 540" class="thin"/>
+    <path d="M 690 480 C 720 500, 750 500, 790 540" class="thin"/>
+    <path d="M 240 620 C 200 650, 160 660, 110 690" class="thin"/>
+    <path d="M 830 620 C 870 650, 910 660, 960 690" class="thin"/>
+    <path d="M 300 500 C 270 530, 250 540, 210 560" class="thin"/>
+    <path d="M 770 500 C 800 530, 820 540, 860 560" class="thin"/>
+  </svg>
+
+  <div class="wrap">
+    <div class="eyebrow">Delta del Gange, del Brahmaputra e del Meghna</div>
+    <h1>Bangla<em>desh</em></h1>
+    <div class="bn">বাংলাদেশ</div>
+    <p class="lede">Un paese che il fiume ha scritto pagina dopo pagina: la terra più giovane del subcontinente indiano, costruita da millenni di limo, monsoni e risaie.</p>
+
+    <div class="hero-meta">
+      <div><strong>Dhaka</strong>Capitale</div>
+      <div><strong>Bengalese</strong>Lingua ufficiale</div>
+      <div><strong>1971</strong>Indipendenza</div>
+      <div><strong>~170 milioni</strong>Abitanti</div>
+    </div>
+  </div>
+</section>
+
+<!-- GEOGRAFIA -->
+<section id="geografia">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-label">01 — Geografia</div>
+        <h2>Il più grande <em>delta</em> del pianeta</h2>
+      </div>
+      <p class="lead-text">Tre grandi fiumi himalayani convergono qui prima di raggiungere il Golfo del Bengala, depositando ogni anno milioni di tonnellate di sedimenti su una pianura quasi interamente a livello del mare.</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">80<small>%</small></div>
+        <div class="label">del territorio è pianura alluvionale, tra le più fertili al mondo</div>
+      </div>
+      <div class="stat">
+        <div class="num">3<small>fiumi</small></div>
+        <div class="label">Gange (Padma), Brahmaputra (Jamuna) e Meghna si incontrano nel paese</div>
+      </div>
+      <div class="stat">
+        <div class="num">6<small>stagioni</small></div>
+        <div class="label">la tradizione bengalese riconosce sei stagioni climatiche, non quattro</div>
+      </div>
+    </div>
+
+    <div class="rivers">
+      <div class="river-chip"><strong>Padma</strong> — il Gange, dopo il confine con l'India</div>
+      <div class="river-chip"><strong>Jamuna</strong> — il tratto bengalese del Brahmaputra</div>
+      <div class="river-chip"><strong>Meghna</strong> — dove i due fiumi maggiori si fondono prima del mare</div>
+    </div>
+  </div>
+</section>
+
+<!-- STORIA -->
+<section id="storia">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-label">02 — Storia</div>
+        <h2>Una nazione nata due volte</h2>
+      </div>
+      <p class="lead-text">Dal Bengala coloniale a stato indipendente: un percorso segnato prima dalla lingua, poi dalle armi.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">1947</div>
+        <div class="tl-body">
+          <h3>Nasce il Pakistan Orientale</h3>
+          <p>Con la partizione del subcontinente indiano, il Bengala orientale a maggioranza musulmana diventa la provincia del Pakistan Orientale, separata da oltre 1.600 km dal Pakistan Occidentale.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">1952</div>
+        <div class="tl-body">
+          <h3>Il movimento per la lingua</h3>
+          <p>Studenti a Dhaka manifestano per il diritto a usare il bengalese come lingua ufficiale. Il 21 febbraio diventerà poi la Giornata Internazionale della Lingua Madre, riconosciuta dall'UNESCO.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">1971</div>
+        <div class="tl-body">
+          <h3>Guerra d'indipendenza</h3>
+          <p>Dopo mesi di conflitto, il 16 dicembre nasce ufficialmente il Bangladesh come stato sovrano, con Dhaka come capitale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NATURA -->
+<section id="natura">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-label">03 — Natura</div>
+        <h2>Foresta d'acqua e <em>tigri</em></h2>
+      </div>
+      <p class="lead-text">Dove il delta incontra il mare, si estende uno degli ecosistemi più singolari della Terra.</p>
+    </div>
+
+    <div class="nature-grid">
+      <div>
+        <div class="nature-card">
+          <h3>Le Sundarbans</h3>
+          <p>La più grande foresta di mangrovie al mondo, condivisa con l'India, si estende lungo la costa meridionale del Bangladesh. Un intrico di canali di marea, isolotti fangosi e radici aeree che filtrano l'acqua salata del Golfo del Bengala.</p>
+        </div>
+        <div class="nature-card">
+          <h3>La tigre del Bengala</h3>
+          <p>Le Sundarbans ospitano una delle ultime popolazioni selvatiche di tigri del Bengala adattate a vivere e nuotare tra le paludi di mangrovie — un caso più unico che raro tra i grandi felini.</p>
+        </div>
+      </div>
+      <div class="nature-card">
+        <h3>Una terra fatta d'acqua</h3>
+        <p>Durante la stagione dei monsoni, larghe porzioni del paese vengono stagionalmente sommerse dalle piene fluviali: un ciclo naturale che da secoli rinnova la fertilità del suolo, ma che rende il Bangladesh anche uno dei paesi più esposti al cambiamento climatico e all'innalzamento del livello del mare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURA -->
+<section id="cultura">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-label">04 — Cultura ed economia</div>
+        <h2>Riso, juta e <em>parole</em></h2>
+      </div>
+      <p class="lead-text">Un'identità costruita sulla terra che si coltiva e sulla lingua che si scrive.</p>
+    </div>
+
+    <div class="culture-grid">
+      <div class="culture-item">
+        <span class="tag">Agricoltura</span>
+        <h3>Il regno del riso</h3>
+        <p>Grazie al suolo alluvionale e al clima monsonico, il Bangladesh è tra i maggiori produttori di riso al mondo, coltivato spesso in tre raccolti annuali sulla stessa terra.</p>
+      </div>
+      <div class="culture-item">
+        <span class="tag">Industria</span>
+        <h3>La fibra dorata</h3>
+        <p>La juta, chiamata localmente "sonali aansh" (fibra dorata), è stata per decenni la spina dorsale dell'export. Oggi il settore tessile e dell'abbigliamento pronto ha preso il suo posto come motore dell'economia nazionale.</p>
+      </div>
+      <div class="culture-item">
+        <span class="tag">Letteratura</span>
+        <h3>La lingua come patria</h3>
+        <p>Rabindranath Tagore e Kazi Nazrul Islam, i due poeti che hanno dato al Bangladesh e al Bengala i loro inni nazionali, restano il cuore di una cultura che considera la lingua bengalese un vero e proprio atto fondativo.</p>
+      </div>
+      <div class="culture-item">
+        <span class="tag">Tradizione</span>
+        <h3>Pohela Boishakh</h3>
+        <p>Il capodanno bengalese, celebrato a metà aprile con cortei, musica e cibo tradizionale, segna l'inizio del calendario agricolo bengalese ed è tra le feste più sentite del paese.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; width:100%;">
+    <div class="bn-mark">সোনার বাংলা</div>
+    <div class="fine">Terra del delta — presentazione generata con Claude</div>
+  </div>
+</footer>
+
+</body>
+</html>
